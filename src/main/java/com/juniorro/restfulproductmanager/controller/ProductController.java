@@ -18,7 +18,7 @@ public class ProductController {
 
 	@RequestMapping(value = "/search", method = RequestMethod.GET)
 	public List<Product> searchMany(String keyword) {
-		return productService.findProducts("%"+keyword+"%");
+		return productService.findProducts("%" + keyword + "%");
 	}
 
 	@RequestMapping(value = "/products", method = RequestMethod.GET)
